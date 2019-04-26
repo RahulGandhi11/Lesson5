@@ -1,4 +1,4 @@
-node {
+node('master') {
     printMessage("Pipeline Start")
 
     stage("Fetch Source Code") {
@@ -20,6 +20,7 @@ node {
 	    }
         }
     printMessage("Pipeline End")
+  }
 }
 
 def printMessage(message) {
