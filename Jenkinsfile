@@ -16,7 +16,7 @@ node {
             if (env.BRANCH_NAME == 'master') {
 		printMessage('Deploying the master branch')
 	    } else {
-		printMessage("No deployment for branch [${env.BRANCH_NAME}]"}
+		printMessage("No deployment for branch [${env.BRANCH_NAME}]")
 	    }
         }
     printMessage("Pipeline End")
